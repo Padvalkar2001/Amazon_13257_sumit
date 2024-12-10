@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="shortcut icon" href="./images/amazon-icon-4.png">
+    <title>Amazon sign in</title>
+    <style>
+        .errorBlock {
+            color: red;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./images/amazon-logo-transparent.png" alt="This is an image">
+        </div>
+    </header>
+    <main>
+        <div class="items">
+            <h3>Sign in</h3>
+            <form onsubmit="return validateAll()" id="enrollmentForm">
+                <label>Email</label><span class="errorBlock" id="error1"></span>
+                <div class="input"><input id="email" style="height: 35px;" type="text"></div>
+
+                <label>Password</label><span class="errorBlock" id="error2"></span>
+                <div class="input"><input id="pass" style="height: 35px;" type="password"></div>
+
+                <!-- Adjusted checkbox placement -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="showp"> 
+                    <label for="showp">Show password</label>
+                </div>
+
+                <div class="Button"><button style="height: 35px;">Continue</button></div>
+                <p>By continuing, you agree to Amazon's
+                    <a href="#">Conditions of Use</a>
+                    and
+                    <a href="#">Privacy Notice.</a>
+                </p>
+            </form>
+
+            <div class="Dropdown">
+                <h5> ˃ Need Help?</h5>
+                <div class="child">
+                    <a href="#">Forgot Password</a>
+                    <a href="#">Other issues with Sign-In</a>
+                </div>
+                <hr id="hr">
+            </div>
+
+            <div class="info">
+                <h4>Buying for work?</h4>
+                <a href="#">Shop on Amazon Business</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="center">
+        <h5>New to Amazon?</h5>
+        <a href="./signup.html">
+            <div class="btn"><button>Create your Amazon account</button></div>
+        </a>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+        </div>
+        <h5>© 1996-2024, Amazon.com, Inc. or its affiliates</h5>
+    </footer>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>
